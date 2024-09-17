@@ -1,0 +1,40 @@
+*{
+    text-decoration: none;
+    margin: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    background-color: white;
+    color: black;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 15px;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text-black{
+    color: black;
+}
+
+.hero{
+    background-image: url(./assets/img/bg-img1.png);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    object-fit: fill;
+}
