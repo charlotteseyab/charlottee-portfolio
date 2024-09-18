@@ -51,6 +51,7 @@ nav {
     border: none;
     color: white;
     border-radius: 5px;
+    box-shadow: 5px 10px black;
 }
 
 .btn1:hover {
@@ -65,6 +66,7 @@ nav {
     color: black;
     width: 125px;
     border-radius: 5px;
+    box-shadow: 5px 10px #8392FD;
 }
 
 .btn2:hover {
@@ -221,4 +223,63 @@ nav {
 .my-items h4{
     font-size: 25px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+span:hover{
+    background-color:#DDE7FF ;
+}
+
+.my-items h4:hover{
+    background-color: #DDE7FF;
+}
+
+.statistics{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #71A9FD;
+    padding: 100px;
+    position: relative;
+    height: 300px;
+}
+
+.statistics-items{
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    height: 100px;
+    width: 100px;
+    padding: 90px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.itm1{
+    position: absolute;
+    top: 50px;
+    bottom: 10px;
+    left: 80px;
+}
+.itm2{
+    position: absolute;
+    top: 50px;
+    bottom: 10px;
+    left: 670px;
+}
+
+.itm3{
+    position: absolute;
+    top: 90px;
+    bottom: 40px; 
+    left: 380px;
+}
+
+.itm4{
+    position: absolute;
+    right: 100px;
+    top: 90px;
+    bottom: 20px;
+    background-color: #1A083D;
 }
