@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -50,19 +51,21 @@
                 neglected.</p>
         </div>
         <div class="services-items">
-            <div class="my-items">
+            <div class="my-items" data-aos="flip-left">
                 <span>&#9684;</span>
                 <h4>Web Design</h4>
                 <p>“It is not because things are difficult that we do not dare; it is because we do not dare that they
                     are difficult.”</p>
             </div>
-            <div class="my-items">
+            <div class="my-items" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
                 <span>&#128187;</span>
                 <h4>Web Development</h4>
                 <p>If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like
                     the wind, opinions.</p>
             </div>
-            <div class="my-items">
+            <div class="my-items" data-aos="fade-right">
                 <span>&#128248;</span>
                 <h4>Photography</h4>
                 <p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put
@@ -72,19 +75,19 @@
     </section>
     <section>
         <div class="statistics">
-            <div class="statistics-items itm1">
+            <div class="statistics-items itm1" data-aos="fade-down-right">
                 <span><img src="./assets/img/checklist.png" alt=""></span><br>
                 <span>230 <br> Completed Projects</span>
             </div>
-            <div class="statistics-items itm2">
+            <div class="statistics-items itm2" data-aos="fade-down-right">
                 <span><img src="./assets/img/person.png" alt=""></span><br>
                 <span>1068 <br> Happy Clients</span>
             </div>
-            <div class="statistics-items itm3">
+            <div class="statistics-items itm3" data-aos="fade-down-right">
                 <span><img src="./assets/img/hand.png" alt=""></span><br>
                 <span>230 <br> Prospective Clients</span>
             </div>
-            <div class="statistics-items itm4">
+            <div class="statistics-items itm4" data-aos="fade-down-right">
                 <span><img src="./assets/img/bulb.png" alt=""></span><br>
                 <span>330 <br> Completed Projects</span>
             </div>
@@ -96,7 +99,7 @@
             <p>When someone does something that they know that they shouldn’t do, did they.</p>
         </div>
         <div class="package">
-            <div>
+            <div data-aos="flip-left">
                 <span class="shadow-pop-tr">01</span>
                 <h6>Ecomony</h6>
                 <p>For the Individuals</p>
@@ -111,7 +114,7 @@
                 <hr>
                 <h3>BUY NOW</h3>
             </div>
-            <div>
+            <div data-aos="flip-left">
                 <span class="shadow-pop-tr">02</span>
                 <h6>Business</h6>
                 <p>For the Individuals</p>
@@ -126,7 +129,7 @@
                 <hr>
                 <h3>BUY NOW</h3>
             </div>
-            <div>
+            <div data-aos="flip-left">
                 <span class="shadow-pop-tr">03</span>
                 <h6>Premium</h6>
                 <p>For the Individuals</p>
@@ -141,7 +144,7 @@
                 <hr>
                 <h3>BUY NOW</h3>
             </div>
-            <div>
+            <div data-aos="flip-left">
                 <span class="shadow-pop-tr">04</span>
                 <h6>Exclusive</h6>
                 <p>For the Individuals</p>
@@ -166,31 +169,31 @@
     <section>
         <form class="form">
             <div class="form-div">
-            <div class="form-itm" >
-                <div>
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="fname"class="form-itm" >
+                <div class="form-itm">
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" class="form-itm">
+                    </div>
+                    <div>
+                        <label for="lname">Last Name</label>
+                        <input type="text" class="form-itm"> <br>
+                    </div>
                 </div>
                 <div>
-                    <label for="lname">Last Name</label>
-                    <input type="text" class="form-itm" > <br>
+                    <label for="fname">Email</label>
+                    <input type="email" class="input"> <br>
                 </div>
-            </div>
-            <div>
-                <label for="fname">Email</label>
-                <input type="email" class="input" > <br>
-            </div>
-            <div >
-                <label for="fname">Subject</label>
-                <input type="text" class="input"><br>
-            </div>
-            <div >
-                <label for="fname">Message</label>
-                <input type="text" id="msg" placeholder="Write Your Notes or Questions Here..." class="input">
-            </div>
-            <div>
-                <button class="button">Send Message</button>
-            </div>
+                <div>
+                    <label for="fname">Subject</label>
+                    <input type="text" class="input"><br>
+                </div>
+                <div>
+                    <label for="fname">Message</label>
+                    <input type="text" id="msg" placeholder="Write Your Notes or Questions Here..." class="input">
+                </div>
+                <div>
+                    <button class="button">Send Message</button>
+                </div>
             </div>
         </form>
     </section>
@@ -200,6 +203,45 @@
         <img src="./assets/img/premium2.png" alt="">
         <img src="./assets/img/premium3.png" alt="">
     </section>
+    <section>
+            <footer class="foot">
+            <div class="footer">
+                <div class="foot1">
+                    <h2>About Me.</h2>
+                    <p>The customer is at the heart of <br> our unique business model, <br> which includes design.</p>
+                    <span>
+                        <img src="./assets/img/fb.png" alt="">
+                        <img src="./assets/img/twitter.png" alt="">
+                        <img src="./assets/img/linkedin.png" alt="">
+                        <img src="./assets/img/github.png" alt="">
+                    </span>
+                </div>
+                <div class="foot-itms">
+                    <h4>QUICK LINKS</h4>
+                    <span>About Us</span>
+                    <span>Services</span>
+                    <span>Testimonials</span>
+                    <span>Contact Us</span>
+                </div>
+                <div class="foot2">
+                    <h4>NEWSLETTER</h4>
+                    <p>Be the first to know about new <br> arrivals, look books, sales & promos!</p>
+                    <label for="email"></label>
+                    <input type="text" id="email" name="email" value="Your Email" class="text-gray">
+                    <input type="submit" value="&#x1F4E7;" id="foot-btn">
+                    <hr>
+                </div>
+            </div>
+            <hr>
+            <p class="end">Copyright © 20242020 All rights reserved | This template is made with 🧡 by <a class="ending"
+                    href="#">Charlotte</a></p>
+        </footer>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init()
+    </script> 
 </body>
 
 </html>
