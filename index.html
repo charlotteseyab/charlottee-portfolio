@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="./messgae.js" defer></script>
 </head>
 
 <body>
@@ -57,9 +58,7 @@
                 <p>“It is not because things are difficult that we do not dare; it is because we do not dare that they
                     are difficult.”</p>
             </div>
-            <div class="my-items" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">
+            <div class="my-items" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <span>&#128187;</span>
                 <h4>Web Development</h4>
                 <p>If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like
@@ -167,7 +166,7 @@
         <button class="contact-btn">Contact Me Now</button>
     </section>
     <section>
-        <form class="form">
+        <form class="form" id="message">
             <div class="form-div">
                 <div class="form-itm">
                     <div>
@@ -192,10 +191,11 @@
                     <input type="text" id="msg" placeholder="Write Your Notes or Questions Here..." class="input">
                 </div>
                 <div>
-                    <button class="button">Send Message</button>
+                    <button class="button" type="submit">Send Message</button>
                 </div>
             </div>
         </form>
+        <h1 id="msg"></h1>
     </section>
     <section class="last-sec">
         <img src="./assets/img/premium.png" alt="">
@@ -204,7 +204,7 @@
         <img src="./assets/img/premium3.png" alt="">
     </section>
     <section>
-            <footer class="foot">
+        <footer class="foot">
             <div class="footer">
                 <div class="foot1">
                     <h2>About Me.</h2>
@@ -241,7 +241,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init()
-    </script> 
+    </script>
 </body>
 
 </html>
