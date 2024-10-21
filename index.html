@@ -8,43 +8,73 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="./messgae.js" defer></script>
+    <script src="./index.js" defer></script>
+    <script src="./darkMode.js"></script>
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 20px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px rgb(22, 22, 22);
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #66B9FD;
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1A083D;
+        }
+    </style>
 </head>
 
 <body>
     <nav>
         <img src="./assets/img/nav-img.png" alt="nav-img">
         <div class="nav-items">
-            <a class="text-black" href="">HOME</a>
-            <a class="text-black" href="">ABOUT</a>
-            <a class="text-black" href="">SERVICES</a>
-            <a class="text-black" href="">PORTFOLIO</a>
-            <a class="text-black" href="">PRICING</a>
-            <a class="text-black" href="">BLOG</a>
-            <a class="text-black" href="">PAGES</a>
-            <a class="text-black" href="">CONTACT</a>
+            <a class="text-black nav-itm" href="#home">HOME</a>
+            <a class="text-black" href="#about">ABOUT</a>
+            <a class="text-black" href="#services">SERVICES</a>
+            <!-- <a class="text-black" href="">PAGES</a> -->
+            <a class="text-black" href="#my works">MY WORKS</a>
+            <a class="text-black" href="#contact">CONTACT</a>
         </div>
+        <button onclick="myFunction()" class="dark-mode-btn" id="mode-toggle">Dark mode</button>
     </nav>
-    <section class="hero-section">
+    <section class="hero-section" id="home">
         <div class="hero-items">
-            <h1>I am Developer <br>Charlotte M Seyab</h1>
+            <h1 class="typewriter glow" id="typewriter"></h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Illo, hic beatae sed ex voluptas qui.</p>
             <button class="btn1 rotate-center ">LEARN MORE</button>
             <button class="btn2 rotate-center">HIRE ME</button>
         </div>
         <img src="./assets/img/hero-img.png" alt="hero-img">
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <img class="shadow-pop-tr" src="./assets/img/about-img.png" alt="about-img">
         <div class="about-items">
             <h3>ABOUT ME</h3>
             <h2>Personal Details</h2>
-            <p>Here, I focus on a range of items and features that we use in life without giving them a second thought.
-                such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-            <button class="btn3 scale-up-center">VIEW FULL DETAILS</button>
+            <p>Hi, I'm Charlotte Seyab, a dedicated full-stack web developer with a passion for building user-friendly
+                and accessible web applications. With a background in social work, I’ve developed a unique perspective
+                on user needs and experience. I specialize in HTML, CSS, JavaScript, and Express, creating seamless
+                applications from front-end to back-end. My mission is to use my technical skills to design solutions
+                that make a difference in people's lives. When I'm not coding, you'll find me volunteering or exploring
+                new technology trends. Let's collaborate and build something impactful together!
+
+            </p>
+            <a href="about.html" class="btn3 scale-up-center">VIEW FULL DETAILS</a>
+
         </div>
     </section>
-    <section>
+    <section id="services">
         <div class="services">
             <h2>MY OFFERED SERVICES</h2>
             <p>At about this time of year, some months after New Year’s <br> resolutions have been made and kept, or
@@ -66,7 +96,7 @@
             </div>
             <div class="my-items" data-aos="fade-right">
                 <span>&#128248;</span>
-                <h4>Photography</h4>
+                <h4>Virtual Assistance</h4>
                 <p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put
                     into improving your skills. Lorem ipsum dolor sit amet.</p>
             </div>
@@ -92,110 +122,68 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="package-item">
-            <h3>Choose Your Plan</h3>
-            <p>When someone does something that they know that they shouldn’t do, did they.</p>
+    <section class="works-section" id="my works">
+        <div class="works-header">
+            <h2>MY WORKS</h2>
+            <p>Here is a gallery of my latest works</p>
         </div>
-        <div class="package">
-            <div data-aos="flip-left">
-                <span class="shadow-pop-tr">01</span>
-                <h6>Ecomony</h6>
-                <p>For the Individuals</p>
-                <hr>
-                <p>Secure Online Transfer</p>
-                <hr>
-                <p>Unlimited Styles for Interface</p>
-                <hr>
-                <p>Reliable Customer Service</p>
-                <hr>
-                <h5>$1000</h5>
-                <hr>
-                <h3>BUY NOW</h3>
+        <div class="works">
+            <div>
+                <h3>Pokemon App</h3>
+                <a href="https://charlotteseyab.github.io/pokemon-api/"><img src="./assets/img/pokemon-screenshot.png"
+                        alt=""></a>
             </div>
-            <div data-aos="flip-left">
-                <span class="shadow-pop-tr">02</span>
-                <h6>Business</h6>
-                <p>For the Individuals</p>
-                <hr>
-                <p>Secure Online Transfer</p>
-                <hr>
-                <p>Unlimited Styles for Interface</p>
-                <hr>
-                <p>Reliable Customer Service</p>
-                <hr>
-                <h5>$1500</h5>
-                <hr>
-                <h3>BUY NOW</h3>
+            <div>
+                <h3>Coffee Website</h3>
+                <a href="https://charlotteseyab.github.io/coffee-page/"><img src="./assets/img/coffee-screenshot.png"
+                        alt=""></a>
             </div>
-            <div data-aos="flip-left">
-                <span class="shadow-pop-tr">03</span>
-                <h6>Premium</h6>
-                <p>For the Individuals</p>
-                <hr>
-                <p>Secure Online Transfer</p>
-                <hr>
-                <p>Unlimited Styles for Interface</p>
-                <hr>
-                <p>Reliable Customer Service</p>
-                <hr>
-                <h5>$2000</h5>
-                <hr>
-                <h3>BUY NOW</h3>
+            <div>
+                <h3>Restuarant Website</h3>
+                <a href="https://charlotteseyab.github.io/practice-work/"><img src="./assets/img/pato-place.png"
+                        alt=""></a>
             </div>
-            <div data-aos="flip-left">
-                <span class="shadow-pop-tr">04</span>
-                <h6>Exclusive</h6>
-                <p>For the Individuals</p>
-                <hr>
-                <p>Secure Online Transfer</p>
-                <hr>
-                <p>Unlimited Styles for Interface</p>
-                <hr>
-                <p>Reliable Customer Service</p>
-                <hr>
-                <h5>$3000</h5>
-                <hr>
-                <h3>BUY NOW</h3>
+            <div>
+                <h3>Fashion Website</h3>
+                <a href="https://charlotteseyab.github.io/Fashion-page/"><img src="./assets/img/fashion-page.png"
+                        alt=""></a>
+            </div>
+            <div>
+                <h3>Library App</h3>
+                <a href="https://library-app-coral-six.vercel.app/"><img src="./assets/img/librarium.png" alt=""></a>
             </div>
         </div>
+
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2>WANT TO CONTACT ME ?</h2>
         <h3>I'm Available</h3>
         <button class="contact-btn">Contact Me Now</button>
     </section>
     <section>
-        <form class="form" id="message">
-            <div class="form-div">
-                <div class="form-itm">
-                    <div>
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="fname" class="form-itm">
-                    </div>
-                    <div>
-                        <label for="lname">Last Name</label>
-                        <input type="text" class="form-itm"> <br>
-                    </div>
-                </div>
-                <div>
-                    <label for="fname">Email</label>
-                    <input type="email" class="input"> <br>
-                </div>
-                <div>
-                    <label for="fname">Subject</label>
-                    <input type="text" class="input"><br>
-                </div>
-                <div>
-                    <label for="fname">Message</label>
-                    <input type="text" id="msg" placeholder="Write Your Notes or Questions Here..." class="input">
-                </div>
-                <div>
-                    <button class="button" type="submit">Send Message</button>
-                </div>
-            </div>
-        </form>
-        <h1 id="msg"></h1>
+        <div class="container">
+            <form>
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">Ghana</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
     </section>
     <section class="last-sec">
         <img src="./assets/img/premium.png" alt="">
@@ -218,10 +206,11 @@
                 </div>
                 <div class="foot-itms">
                     <h4>QUICK LINKS</h4>
-                    <span>About Us</span>
-                    <span>Services</span>
-                    <span>Testimonials</span>
-                    <span>Contact Us</span>
+                    <a href="#home"><span>Home</span></a>
+                  <a href="#about">  <span>About</span></a>
+                    <a href="#services"><span>Services</span></a>
+                    <a href="#my works"><span>My Works</span></a>
+                    <a href="#contact"><span>Contact Us</span></a>
                 </div>
                 <div class="foot2">
                     <h4>NEWSLETTER</h4>
@@ -242,6 +231,16 @@
     <script>
         AOS.init()
     </script>
+    <div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>
