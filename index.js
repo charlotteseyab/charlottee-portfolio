@@ -3,7 +3,7 @@ const messages = [
     "Welcome to my website!",
     "I am Charlotte Seyab.",
     "I am a web developer.",
-    "I love coding and creating websites."
+    // "I love coding and creating websites."
 ];
 let messageIndex = 0; // Track which message is being typed
 let i = 0; // Track current character of the message
